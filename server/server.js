@@ -53,24 +53,4 @@ Meteor.startup(function () {
     }
 });
 
-//Roles.addUsersToRoles(Meteor.user().userId, 'admin');
 
-//Add users to roles
- /* var users = [
-      {name:"HTEI Shop",email:"shop@htei.com",roles:['shop']}
-    ];
-
-  _.each(users, function (user) {
-    var id;
-
-    id = Accounts.createUser({
-      email: user.email,
-      password: "password",
-      profile: { name: user.name }
-    });
-
-    if (user.roles.length > 0) {
-      Roles.addUsersToRoles(id, user.roles);
-    }
-
-  });*/

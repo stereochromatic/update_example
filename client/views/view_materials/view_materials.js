@@ -87,8 +87,7 @@ Template.view_materials.events = {
             comment: tmpl.find("#comment").value,
             time: moment().format('LLLL'),
             supplier: tmpl.find("#supplier").value,
-            type: tmpl.find("#type").value,
-            name: Meteor.user().profile.name
+            type: tmpl.find("#type").value
         };
 
         //Check to see if its there already

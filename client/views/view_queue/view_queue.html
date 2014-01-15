@@ -1,0 +1,49 @@
+<!-- client/views/view_queue.html -->
+<template name="view_queue">
+	
+    {{> view_select_views}}
+    
+    <div class="jumbotron">
+   		<table class="table table-striped">
+      		<thead>
+        		<tr>
+       				<th>
+          				Part #
+       				</th>          				
+       				<th>
+            			Due Date		
+        			</th>
+        			<th>
+       					Lot Size
+       				</th>
+       				<th>
+       					Current Station        				
+       				</th>
+              <th>
+               Actions
+              </th>
+      			</thead>
+      			<tbody>
+              {{#each orders}}
+        			  <tr>
+       				    <td>
+           		 		 <a> {{ this.part_number}} </a>
+       				 	  </td>         					
+       				 	  <td>
+            			  {{ this.due_date }}
+          				</td>
+          				<td>
+           				  {{ this.quantity }}
+       					  </td>
+       					  <td>
+            			  {{ this.station }}
+          			  </td>
+                  <td>
+                    <input type="button" value="X" class="delete" />
+                  </td>
+        			  </tr>
+              {{/each}}
+   				  </tbody>
+			</table>
+		</div>
+</template>

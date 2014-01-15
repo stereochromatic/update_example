@@ -58,8 +58,7 @@ Template.view_order.events( {
             qty_added: rawQty,
             comment: 'Used for Order',
             time: moment().format('LLLL'),
-            supplier: customer.value,
-            name: Meteor.user().profile.name
+            supplier: customer.value
         };
 
         //and finally update the damn entry
